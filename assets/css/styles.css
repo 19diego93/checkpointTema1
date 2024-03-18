@@ -135,7 +135,7 @@ td {
 /* footer */
 .footer {
   margin-top: 1rem;
-  padding: 1rem 0;
+  padding-top: 0.5rem;
   background-color: var(--black);
   color: var(--white);
   width: 100%;
@@ -167,6 +167,7 @@ td {
   .plataformSection {
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 1rem;
   }
   /* footer */
   .footer {
@@ -177,11 +178,11 @@ td {
 
 @media screen and (min-width: 1024px) {
   .logo {
-    max-width: 200px;
+    max-width: 90px;
   }
   /* header */
   .header {
-    height: 20vh;
+    min-height: 20vh;
   }
   .headerTitle {
     font-size: 5rem;
@@ -189,23 +190,116 @@ td {
   .topHeader {
     margin-top: 0;
   }
+  .headerNav {
+    height: 4rem;
+  }
   .headerNav a {
     transition: all 0.5s;
   }
   /* main */
 
   .main {
-    height: 70vh;
+    background-size: 80%;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .sectionTitle {
+    height: 3rem;
+    vertical-align: center;
+    margin-top: 0;
+  }
+  .cardsContainer {
+    justify-content: space-around;
+    width: 75%;
+  }
+  .card {
+    width: 230px;
+    height: 300px;
+  }
+  .plataformSection {
+    justify-content: space-around;
+    width: 75%;
   }
   /* footer */
   .footer {
     flex-direction: row;
     justify-content: space-around;
-    height: 10vh;
+    min-height: 10vh;
   }
   /* hover */
   .headerNav a:hover {
     background-color: lightblue;
     color: var(--black);
+  }
+}
+
+@media screen and (min-width: 1456px) {
+  .logo {
+    max-width: 300px;
+  }
+  /* header */
+
+  .headerTitle {
+    text-shadow: 0.5rem 0.3rem 0.4rem rgba(255, 0, 0, 0.678);
+  }
+
+  .headerTitle {
+    font-size: 11rem;
+  }
+  .topHeader {
+    margin-top: 0;
+  }
+  .headerNav {
+    height: 7rem;
+  }
+  .headerNav a {
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem var(--white);
+    font-size: 2.3rem;
+    padding: 1rem;
+    transition: all 0.5s;
+  }
+  /* main */
+  .main {
+    justify-content: space-around;
+    background-size: 120%;
+    background-position: top 0 left 50%;
+  }
+  .sectionTitle {
+    font-size: 3rem;
+  }
+  .card {
+    width: 330px;
+    height: 400px;
+  }
+  .cardTitle {
+    font-size: 2.5rem;
+  }
+  .cardsContainer,.plataformSection{
+    width:55%
+  }
+
+  .listContainer,
+  .tableContainer {
+    padding: 1rem;
+    width: 400px;
+    height: 350px;
+    font-size: 1.9rem;
+  }
+  .tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* footer */
+  .footer {
+    font-size: 2rem;
+  }
+  input {
+    font-size: 1.7rem;
+  }
+  button {
+    font-size: 1.5rem;
   }
 }

@@ -108,6 +108,9 @@
   text-align: center;
   align-items: center;
 }
+.platafomrArticleTitle {
+  display: none;
+}
 .listContainer,
 .tableContainer {
   width: 220px;
@@ -275,8 +278,9 @@ td {
   .cardTitle {
     font-size: 2.5rem;
   }
-  .cardsContainer,.plataformSection{
-    width:55%
+  .cardsContainer,
+  .plataformSection {
+    width: 55%;
   }
 
   .listContainer,
